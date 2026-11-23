@@ -44,7 +44,6 @@ The Node checks cover blog filtering, search, pagination and article data; Whats
 - Textured Earth with trade routes and city markers
 - Scroll-driven shipping and delivery sequence
 - Blog categories, search, pagination and article pages
-- WhatsApp quote form with prefilled messages
 - Reduced-motion handling and a fallback when 3D scenes cannot load
 
 Routes are `/`, `/blog` and `/blog/:slug`. The quote form opens WhatsApp; it does not submit to a backend. `vercel.json` supplies the SPA rewrite for direct navigation and refreshes on Vercel.
