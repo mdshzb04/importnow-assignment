@@ -1,0 +1,11 @@
+import { Factory, Hotel, Languages, MapPin, NotebookText, Soup } from 'lucide-react';
+import { departures, tripCities, tripInclusions } from '../data/home';
+import { HomeCard, SectionHeading } from '../components/home/HomeUI';
+import { moveHomeButton, resetHomeButton } from '../lib/homeMotion';
+const icons = [NotebookText, Hotel, Soup, Languages, Factory, MapPin];
+export default function BusinessTrips() {
+  return <section id="trips" className="home-section"><div className="wrap"><SectionHeading eyebrow="Business trips to China" before="Your business trip doesn't have to" accent="feel like work." intro="Guided trips to the Canton Fair, wholesale markets and factories you choose. Our clients often tell us it felt like a personal trip, not a business tour." /><div className="home-trips-grid"><HomeCard className="home-trip-feature"><svg className="home-trip-skyline" viewBox="0 0 600 150" preserveAspectRatio="none" aria-hidden="true"><g fill="rgba(40,20,50,.55)">{[[0,110,30],[35,80,24],[72,65,38],[126,95,40],[180,70,42],[242,32,28],[290,90,30],[340,55,37],[400,95,30],[447,25,28],[495,78,45],[550,105,50]].map(([x,y,w]) => <rect key={x} x={x} y={y} width={w} height={150-y} />)}<polygon points="242,32 256,6 270,32" /><rect x="457" y="4" width="8" height="25" /></g></svg><span className="home-eyebrow">Canton Fair · Guangzhou</span><h3>Meet factories face to face. We handle everything else.</h3><p>Walk the world's biggest trade fair with a guide who speaks the language, then visit the factories you shortlist.</p><div className="home-trip-chips">{tripCities.map(city => <span key={city}>{city}</span>)}</div></HomeCard>
+    <HomeCard className="home-trip-included" delay={.08}><h3>What's included</h3><div className="home-inclusions">{tripInclusions.map((item, index) => { const Icon = icons[index]; return <div key={item}><Icon size={20} strokeWidth={1.8} aria-hidden="true" />{item}</div>; })}</div></HomeCard>
+    <HomeCard className="home-trip-departures" delay={.16}><h3>Next departures</h3><div className="home-departures">{departures.map(item => <div key={item.season}><b>{item.season}</b><span>{item.dates}</span></div>)}</div><a href="#contact" className="home-button" onPointerMove={moveHomeButton} onPointerLeave={resetHomeButton}>Join the next trip <span aria-hidden="true">→</span></a></HomeCard>
+  </div></div></section>;
+}

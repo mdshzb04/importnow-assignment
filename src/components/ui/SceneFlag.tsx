@@ -1,0 +1,3 @@
+export default function SceneFlag({ country }: { country: 'cn' | 'in' }) {
+  return <svg className="scene-flag" viewBox="0 0 30 20" aria-hidden="true">{country === 'cn' ? <><rect width="30" height="20" fill="#de2910" /><polygon points="5,3 6.2,6.5 9.8,6.5 6.9,8.7 8,12.3 5,10.1 2,12.3 3.1,8.7 .2,6.5 3.8,6.5" fill="#ffde00" />{[[10.5,2.5],[12.5,4.6],[12.5,7.6],[10.5,9.6]].map(([cx,cy]) => <circle key={cy} cx={cx} cy={cy} r=".9" fill="#ffde00" />)}</> : <><rect width="30" height="20" fill="#fff" /><rect width="30" height="6.67" fill="#ff9933" /><rect y="13.33" width="30" height="6.67" fill="#138808" /><circle cx="15" cy="10" r="2.6" stroke="#000080" strokeWidth=".7" fill="none" /><circle cx="15" cy="10" r=".6" fill="#000080" /></>}</svg>;
+}
