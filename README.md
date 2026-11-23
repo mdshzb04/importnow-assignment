@@ -78,3 +78,15 @@ To regenerate the textures, use Python 3 with Pillow installed and run `python s
 
 <img width="1839" height="954" alt="image" src="https://github.com/user-attachments/assets/6ef1510c-f7a7-4035-960d-daaab7b32b3d" />
 
+<img width="1839" height="954" alt="image" src="https://github.com/user-attachments/assets/806de7ec-172c-461b-bd73-c8346a6aedad" />
+
+<img width="1839" height="954" alt="image" src="https://github.com/user-attachments/assets/c144fba0-84b3-4a73-9b36-be5d1735a7c9" />
+
+<img width="1839" height="954" alt="image" src="https://github.com/user-attachments/assets/fbe907fe-8abe-4e80-baeb-33ace553aad7" />
+
+<img width="1839" height="954" alt="image" src="https://github.com/user-attachments/assets/9dddec04-e227-4426-8c9d-6e8f806840be" />
+
+
+
+
+
