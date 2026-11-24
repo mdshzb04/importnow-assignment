@@ -74,7 +74,11 @@ scripts/        Logic checks and optional texture preparation
 To regenerate the textures, use Python 3 with Pillow installed and run `python scripts/prepare-scene-assets.py`. This optional step downloads the Earth source maps and generates the water normal. It is unnecessary for a normal checkout because the prepared assets are included.
 
 
-https://github.com/user-attachments/assets/fb9363ee-02a1-4fc7-abbd-4f35985d97d0
+
+
+https://github.com/user-attachments/assets/3e47f4d3-56c9-45fb-b4d9-c0b42b51456e
+
+
 
 
 
